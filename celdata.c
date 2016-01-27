@@ -71,7 +71,7 @@ void print_CELdata(CELdata *d){
   else if(d->type == CEL_TYPE_CALVIN) type_str = "calvin";
   else if(d->type == CEL_TYPE_TEXT) type_str = "text";
   if(d->intensity_stats_calculated != 1) printf("%s\t%s\t%s\t%d\t%d\t%d\t%d\t%d\n", type_str, d->array, d->algorithm, d->rows, d->cols, d->cell_margin, d->outliers, d->masked);
-  else printf("%s\t%s\t%s\t%d\t%d\t%d\t%d\t%d\t[%0.0f\t%0.0f\t%d\t%d]\n", type_str, d->array, d->algorithm, d->rows, d->cols, d->cell_margin, d->outliers, d->masked, d->intensity_min, d->intensity_max, d->intensity_n_unique, d->intensity_n_invalid);
+  else printf("%s\t%s\t%s\t%d\t%d\t%d\t%d\t%d\t%0.0f\t%0.0f\t%d\t%d\n", type_str, d->array, d->algorithm, d->rows, d->cols, d->cell_margin, d->outliers, d->masked, d->intensity_min, d->intensity_max, d->intensity_n_unique, d->intensity_n_invalid);
 }
 
 void extract_chipname(char *str, CELdata *d){
