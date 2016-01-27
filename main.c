@@ -56,7 +56,7 @@ int main (int argc, const char * argv[])
         printf("-c: calculate and display intensity statistics\n");
         printf("-f: filter out invalid CEL files\n");
         printf("-h: display this help information\n");
-        printf("-h: display version\n");
+        printf("-v: display version\n");
         printf("\nOutput columns:\n");
         printf("  : CEL file name\n");
         printf("  : file format\n");
